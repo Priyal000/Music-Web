@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 90%;
+    font-family: "Jost", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,400;1,100;1,300;1,900&display=swap');
+
+.main_div{
+    width: auto ;
+    height: 45.6rem;
+    background-color: rgb(31, 27, 27);
+    display: grid;
+    place-items: center;
+}
+
+.music_container{
+    padding: 30px;
+    width: 350px;
+    height: 500px;
+    margin-top: -18px;
+    color: rgb(205, 227, 247);
+    background-color: rgb(10, 10, 10);
+    border-radius: 20px;
+    border: 0.2px solid rgb(146, 99, 99);
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(71, 26, 26);
+    text-align: center;
+}
+
+.music_container #title{
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.2rem;
+    color: rgb(164, 187, 206);
+    margin: 2rem 0 0.5rem 0;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.music_container #artist{
+    color: rgb(223, 215, 203);
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    font-size: 23px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.music_container .progressbar{
+    cursor: pointer;
+}
+.img_container{
+    width: auto;
+    height: 14rem;
+    margin: auto;
+    border-radius: 50%;
+}
+
+img{
+    width: auto;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 1.2rem 3rem 0.5rem rgb(71, 26, 26);
+}
+
+.music_controls{
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.music_controls .fas{
+    color: antiquewhite;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    filter: drop-shadow(12px 30px 5px rgba(0,0,0,0.4));
+}
+
+.music_controls .main_button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(241, 235, 235);
+    color: rgb(11, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.progressbar{
+    margin-top: 0.9rem;
+    width: auto;
+    height: 50px;
+}
+.music_controls .fas:hover {
+    color: rgb(126, 202, 202);
+}    
+
+.animation{
+    animation: rotatePlayer 3s linear infinite;
+}
+
+
+@keyframes rotatePlayer {
+    100% {transform: rotate(360deg);}
+  }
+  .songsList{
+      margin-top: 5px;
+      margin: auto; 
+      width: auto;
+      height: auto;
+      align-items: center;
+      /* background:rgb(66, 55, 55); */
+  }
+.imgs-list{
+    margin: auto;
+    max-width: 2rem;
+    width: auto;
+    height: auto;
+}
+#name{
+    font-size: medium;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+}
+.playSong{
+    margin-left: 10rem;
+    width: 2rem;
+    /* float: right; */
+}
+@media screen and (max-width: 416px) {
+    .songsList{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+.song1{
+    width: auto;
+    height: auto;
+
+}
+.song2{
+    width: auto;
+    height: auto;
+}
+.song3{
+    width: auto;
+    height: auto;
+}
+.timestamp{
+   margin: auto;
+   padding-right: 10px;
+}          

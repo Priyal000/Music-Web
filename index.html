@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h2 id="title"> If we have</h2>
+            <h3 id="artist">Alec Benjamin</h3>
+            <div class="img_container">
+                <img src="music1.jpg" alt="">
+            </div>
+            <audio src="music1.m4a"></audio>
+
+            <div class="music_controls">
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                <!-- <i class="fas fa-play, main_button" id="play" title="Play"></i> -->
+                <img class="main_button" id="play" onclick="playMusic()" src="/OIP (2).jpg" alt="">
+                <img class="main_button" id="pause" style="display: none;" onclick="pauseMusic()" src="/R.jpg"
+                    alt="">
+                <i class="fas fa-forward" id="next" title="Next"></i>
+            </div>
+            <div class="progressbar">
+                <input type="range" name="range" id="progressBar" min="0" max="100" value="0">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
